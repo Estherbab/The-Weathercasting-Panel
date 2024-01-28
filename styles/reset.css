@@ -11,14 +11,17 @@ padding: 30px;
 }
 
 body {
-    background: blue;
-}
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
 
-h1 {
+/* h1 {
     color:black;
     padding: 18px 0;
     background-color: red;
-}
+} */
 
 .container-fluid {
     display: flex;
@@ -29,11 +32,16 @@ h1 {
 
 }
 
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-input {
     height: 42px;
 }
 
 .btn {
-    width: 40vh;
+    width: 30vh;
     height: 35px;
 }
