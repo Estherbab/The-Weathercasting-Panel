@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <!-- WEATHER DASHBOARD NAV BAR SECTION-->    
+<!-- WEATHER DASHBOARD NAV BAR SECTION-->    
        <header class="container-fluid text-centre text-white bg-primary p-2 pt-5 pb-5 weather-header" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
         <h1 class="display-2">Weather Dashboard</h1>
        </header>
-     <!-- END OF WEATHER NAV BAR SECTION-->  
+<!-- END OF WEATHER NAV BAR SECTION-->  
      
     <div class="container-fluid">
     <div class="row">
     <div class="col-lg-3 bg-light">
     
-    <!-- SEARCH FOR A CITY INPUT FORM SECTION-->    
+<!-- SEARCH FOR A CITY INPUT FORM SECTION-->    
         <h2 id="form-heading" class="mt-1 mb-3 h3 form-label">
             Search for a City:
         </h2>    
@@ -31,17 +31,17 @@
             </div>
         </div>
     </form>
-    <!-- END OF SEARCH INPUT FORM SECTION-->
+<!-- END OF SEARCH INPUT FORM SECTION-->
 
     <div class="list-group" id="history"></div>
     <div class="col-lg-9 pb-3">
         <section id="today" class="mt-3" role="region" aria-live="polite"></section>
-    <!-- SEARCH BUTTON SECTION-->
+<!-- SEARCH BUTTON SECTION-->
     <div class="input-group-append">
         <button type="submit" class="btn search-button btn btn-primary" id="search-button" aria-label="submit search">
         SEARCH
         </button>
-    <!-- END OF SEARCH BUTTON SECTION-->    
+<!-- END OF SEARCH BUTTON SECTION-->    
         <hr class="hr weather-hr"/>
         <div>
             <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
@@ -49,4 +49,19 @@
     </div>
     </div>
     </div>
-    <!-- END OF HR LINE SECTION -->  
+<!-- END OF HR LINE SECTION -->  
+
+    <div class="col-lg-9">
+    <div class="row mr-3 mt-2">
+<!-- START OF CURRENT WEATHER DATA BY CITY-->
+        <div class="col-lg-11 card m-3" id="weather-today">
+            <div class="card-body border-dark">
+                <h2 id="city-name" class="city-name align-middle">LONDON</h2>
+                <p class="current-date">Current Date DD/MM/YYYY</p>
+                <p class="weather-icon">Weather Icon</p>
+                <p class="temperature">Temperature</p>
+                <p class="wind-speed">Wind Speed</p>
+                <p class="humidity">Humidity</p>
+            </div>
+<!-- END OF CURRENT WEATHER DATA BY CITY-->
+ 
