@@ -20,3 +20,13 @@ var weatherIcon = document.querySelector(".weather-icon")
 var temperature = document.querySelector(".temperature")
 var windSpeed = document.querySelector(".wind-speed")
 var humidity = document.querySelector(".humidity")
+
+
+// Declaring the variables for the 5 day weather forecast cards in the DOM elements
+var forecastcardBody = document.querySelectorAll(".card-body")
+var forecastcardDate = document.querySelectorAll(".fivedate")
+var forecastcardIcon = document.querySelectorAll(".fiveicon")
+var forecastcardTemperature = document.querySelectorAll(".fivetemperature")
+var forecastcardWind = document.querySelectorAll(".fivewind")
+var forecastcardHumidity = document.querySelectorAll(".fivehumidity")
+
