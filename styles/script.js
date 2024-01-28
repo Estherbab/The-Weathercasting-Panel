@@ -30,3 +30,25 @@ var forecastcardTemperature = document.querySelectorAll(".fivetemperature")
 var forecastcardWind = document.querySelectorAll(".fivewind")
 var forecastcardHumidity = document.querySelectorAll(".fivehumidity")
 
+
+
+// Created a Fetch Call for the Current Weather URL
+fetch(currentWeatherURL)
+  .then(function (response) {
+     // Calling .json() to access the json data stored inside the returned promise
+    return response.json();
+  })
+   // We store all of the retrieved data inside of an object called "data"
+  .then(function (data) {
+
+    // Log the currenWeatherURL
+    console.log(currentWeatherURL);
+
+    // // Create CODE HERE to Log the queryURL
+    // // Create CODE HERE to log the resulting object
+    // // Create CODE HERE to calculate the temperature (converted from Kelvin)
+    // // Create CODE HERE to transfer content to HTML
+    // // Hint: To convert from Kelvin to Celsius: C = K - 273.15
+    // // Create CODE HERE to dump the temperature content into HTML
+
+  });
