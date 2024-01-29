@@ -9,7 +9,7 @@ var fivedayForecastURL = "http://api.openweathermap.org/data/2.5/forecast?lat={l
 
 
 // Declaring the variables for the user input in the (Document Object Model) elements
-var searchCity = document.getElementById("search-form")
+var searchCity = document.getElementById("search-input")
 var searchBtn = document.getElementById("search-button")
 
 // Declaring the variables for the current weather data card in the DOM elements
@@ -29,6 +29,19 @@ var forecastcardIcon = document.querySelectorAll(".fiveicon")
 var forecastcardTemperature = document.querySelectorAll(".fivetemperature")
 var forecastcardWind = document.querySelectorAll(".fivewind")
 var forecastcardHumidity = document.querySelectorAll(".fivehumidity")
+
+
+const getCityCoordinates = () => {
+  const cityInput = searchCity.value.trim(); //Get user to enter the city name with no extra spaces
+  if (!cityInput) return; // return if city name is empty
+  console.log(cityInput)
+
+}
+
+searchBtn.addEventListener("click", getCityCoordinates);
+
+
+
 
 
 
