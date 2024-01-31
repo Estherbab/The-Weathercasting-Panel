@@ -42,8 +42,8 @@ const getweatherDetails = (cityInput, lat, lon) => {
     cityName.textContent = data.name
     temperature.textContent = "Tempereature : " + data.main.temp + "°C"
     todaysDate.textContent = new Date (data.dt*1000) .toLocaleDateString() // Javascript date format that goes into local storage & collects the date x 1000 so that its in the correct format
-    humidity.textContent = "Humidity : " + data.main.humidity
-    windSpeed.textContent = "Wind Speed : " + data.wind.speed
+    humidity.textContent = "Humidity : " + data.main.humidity + "%"
+    windSpeed.textContent = "Wind Speed : " + data.wind.speed + "m/s"
   }).catch(() => {
     alert("error occured while fetching the weather forecast!");
   });
