@@ -81,9 +81,14 @@ const getCityCoordinates = (cityInput) => {
 
 }
 
-// function getForecast(lat, lon) {
-//   console.log(lat,lon)
-// }
+function getForecast(cityInput) {
+  console.log(cityInput);
+
+let getForecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&units=metric" + "&appid=" + APIKey
+}
+
+
+
 function previousCity() {
   console.log(this)
   getCityCoordinates(this.textContent)
