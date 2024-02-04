@@ -139,12 +139,12 @@ if(i==4) {
 
 if(i==12) {
   let datetwoDiv = document.getElementById("two-date")                                                                 // Setting the variable to access card 2's date ID in html
-  let oneweatherIconDiv = document.getElementById("one-icon")                                                         // Setting the variable to access card 2's weather icon ID in html
-  let temponeDiv = document.getElementById("one-temperature")                                                        // Setting the variable to access card 2's temperature ID in html
-  let windoneDiv = document.getElementById("one-wind")                                                              // Setting the variable to access card 2's wind speed ID in html
-  let humidoneDiv = document.getElementById("one-humidity")                                                        // Setting the variable to access card 2's humidity ID in html
+  let oneweatherIconDiv = document.getElementById("two-icon")                                                         // Setting the variable to access card 2's weather icon ID in html
+  let temponeDiv = document.getElementById("two-temperature")                                                        // Setting the variable to access card 2's temperature ID in html
+  let windoneDiv = document.getElementById("two-wind")                                                              // Setting the variable to access card 2's wind speed ID in html
+  let humidoneDiv = document.getElementById("two-humidity")                                                        // Setting the variable to access card 2's humidity ID in html
 
-  
+
 
 
 
