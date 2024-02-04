@@ -121,6 +121,7 @@ console.log(forecastData.list)
 for (let i = 4; i < 37; i+=8) {
 console.log(forecastData.list[i])
 
+
   
 }
 }
