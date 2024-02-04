@@ -121,7 +121,7 @@ console.log(forecastData.list)
 for (let i = 4; i < 37; i+=8) {
 console.log(forecastData.list[i])
 
-// if index is = to the 4th number in the array append all the details below from the 4th array onto the first card
+// if index is = to the 4th number in the array append all the details below from the 4th array onto the 1first card
 if(i==4) {
   let dateoneDiv = document.getElementById("one-date")                                                                 // Setting the variable to access card 1's date ID in html
   let oneweatherIconDiv = document.getElementById("one-icon")                                                         // Setting the variable to access card 1's weather icon ID in html
@@ -134,21 +134,83 @@ if(i==4) {
   temponeDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";                            // The text content of the temperature section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
   windoneDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";                           // The text content of the wind speed section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
   humidoneDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";                          // The text content of the humidity section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
-  
+
 }
 
+// if index is = to the number 12 in the array append all the details below from the 12th array onto the 2second card
 if(i==12) {
   let datetwoDiv = document.getElementById("two-date")                                                                 // Setting the variable to access card 2's date ID in html
-  let oneweatherIconDiv = document.getElementById("two-icon")                                                         // Setting the variable to access card 2's weather icon ID in html
-  let temponeDiv = document.getElementById("two-temperature")                                                        // Setting the variable to access card 2's temperature ID in html
-  let windoneDiv = document.getElementById("two-wind")                                                              // Setting the variable to access card 2's wind speed ID in html
-  let humidoneDiv = document.getElementById("two-humidity")                                                        // Setting the variable to access card 2's humidity ID in html
+  let twoweatherIconDiv = document.getElementById("two-icon")                                                         // Setting the variable to access card 2's weather icon ID in html
+  let temptwoDiv = document.getElementById("two-temperature")                                                        // Setting the variable to access card 2's temperature ID in html
+  let windtwoDiv = document.getElementById("two-wind")                                                              // Setting the variable to access card 2's wind speed ID in html
+  let humidtwoDiv = document.getElementById("two-humidity")                                                        // Setting the variable to access card 2's humidity ID in html
 
-
-
-
+  datetwoDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);      
+  twoweatherIconDiv.textContent = forecastData.list[i].weather.icon
+  temptwoDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";
+  windtwoDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";
+  humidtwoDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";
 
 }
+
+// if index is = to the number 20 in the array append all the details below from the 20th array onto the 3third card
+if(i==20) {
+  let datetwoDiv = document.getElementById("two-date")                                                                 // Setting the variable to access card 3's date ID in html
+  let twoweatherIconDiv = document.getElementById("two-icon")                                                         // Setting the variable to access card 3's weather icon ID in html
+  let temptwoDiv = document.getElementById("two-temperature")                                                        // Setting the variable to access card 3's temperature ID in html
+  let windtwoDiv = document.getElementById("two-wind")                                                              // Setting the variable to access card 3's wind speed ID in html
+  let humidtwoDiv = document.getElementById("two-humidity")                                                        // Setting the variable to access card 3's humidity ID in html
+
+  datetwoDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);      
+  twoweatherIconDiv.textContent = forecastData.list[i].weather.icon
+  temptwoDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";
+  windtwoDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";
+  humidtwoDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";
+
+}
+
+// if index is = to the number 28 in the array append all the details below from the 28th array onto the 4fourth card
+if(i==28) {
+  let datetwoDiv = document.getElementById("two-date")                                                                 // Setting the variable to access card 4's date ID in html
+  let twoweatherIconDiv = document.getElementById("two-icon")                                                         // Setting the variable to access card 4's weather icon ID in html
+  let temptwoDiv = document.getElementById("two-temperature")                                                        // Setting the variable to access card 4's temperature ID in html
+  let windtwoDiv = document.getElementById("two-wind")                                                              // Setting the variable to access card 4's wind speed ID in html
+  let humidtwoDiv = document.getElementById("two-humidity")                                                        // Setting the variable to access card 4's humidity ID in html
+
+  datetwoDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);      
+  twoweatherIconDiv.textContent = forecastData.list[i].weather.icon
+  temptwoDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";
+  windtwoDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";
+  humidtwoDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";
+
+}
+
+// if index is = to the number 36 in the array append all the details below from the 36th array onto the 5fifth card
+if(i==36) {
+  let datetwoDiv = document.getElementById("two-date")                                                                 // Setting the variable to access card 5's date ID in html
+  let twoweatherIconDiv = document.getElementById("two-icon")                                                         // Setting the variable to access card 5's weather icon ID in html
+  let temptwoDiv = document.getElementById("two-temperature")                                                        // Setting the variable to access card 5's temperature ID in html
+  let windtwoDiv = document.getElementById("two-wind")                                                              // Setting the variable to access card 5's wind speed ID in html
+  let humidtwoDiv = document.getElementById("two-humidity")                                                        // Setting the variable to access card 5's humidity ID in html
+
+  datetwoDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);      
+  twoweatherIconDiv.textContent = forecastData.list[i].weather.icon
+  temptwoDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";
+  windtwoDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";
+  humidtwoDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";
+
+}
+
+
+
+
+
+
+
+
+
+
+
   
 }
 }
