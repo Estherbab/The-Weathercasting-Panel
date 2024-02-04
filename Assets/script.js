@@ -122,10 +122,18 @@ for (let i = 4; i < 37; i+=8) {
 console.log(forecastData.list[i])
 
 if(i==4) {
-  let tempDiv = document.getElementById("one-temperature")
-  let windDiv = document.getElementById("one-wind")
-  tempDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";
-  windDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s"
+  let dateDiv = document.getElementById("one-date")                                                                 // Setting the variable to access card 1's date ID in html
+  let oneweatherIconDiv = document.getElementById("one-icon")                                                      // Setting the variable to access card 1's weather icon ID in html
+  let tempDiv = document.getElementById("one-temperature")                                                        // Setting the variable to access card 1's temperature ID in html
+  let windDiv = document.getElementById("one-wind")                                                              // Setting the variable to access card 1's wind speed ID in html
+  let humidDiv = document.getElementById("one-humidity")                                                        // Setting the variable to access card 1's humidity ID in html
+
+  dateDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);                                           // The text content of the date section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  oneweatherIconDiv.textContent = forecastData.list[i].weather.icon                                           // The text content of the weather icon section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  tempDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";                            // The text content of the temperature section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  windDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";                           // The text content of the wind speed section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  humidDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";                          // The text content of the humidity section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  
 
 
 
