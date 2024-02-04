@@ -17,7 +17,7 @@
     </header>
     <!-- END OF WEATHER NAV BAR SECTION-->
 
-    <!-- START OF MAIN CONTAINER DIVS-->
+    <!-- START OF MAIN CONTAINER DIVS FOR THE WHOLE BODY SECTION-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 bg-light">
@@ -58,9 +58,18 @@
             <!-- END OF HR LINE SECTION -->
 
             <div class="col-lg-9">
-                <div class="row mr-3 mt-2 p-2">
+                <div class="row mr-3 p-2">
                     <!-- START OF CURRENT WEATHER DATA BY CITY CARD-->
-                    <div class="col-lg-11 card m-3" id="weather-today">
+                    <div class="col-lg-11 card" id="weather-today">
+                    <!-- START OF TODAYS WEATHER FORECAST TITLE-->
+                        <div class="row-sun" id="fivedayforecast-header">
+                            <div class="row">
+                                <div class="col-12 mb-2 mt-4">
+                                    <h3 class="fs-2">Today's Forecast In</h3>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- END OF TODAYS FORECAST TITLE-->
                         <div class="card-body border-dark text-white">
                             <h2 id="city-name" class="city-name align-middle fw-bold">KAMPALA</h2>
                             <p class="current-date fs-6 fw-bold">DD/MM/YYYY</p>
@@ -71,78 +80,78 @@
                         </div>
                         <!-- END OF CURRENT WEATHER DATA BY CITY CARD-->
 
-                        <!-- START OF 5 DAY FORECAST WEATHER -->
+                        <!-- START OF 5 DAY FORECAST WEATHER TITLE AND CARDS -->
                         <div class="row-cloud" id="fivedayforecast-header">
                             <div class="row">
-                                <div class="col-12 mb-3 mt-3">
+                                <div class="col-12 mb-2 mt-4">
                                     <h3 class="fs-2">5 Day Weather Forecast</h3>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row gutters">
-                            <!-- DAY 1 WEATHER FORECAST -->
+                        <div class="row gx-5 gy-5">
+                            <!-- DAY 1 WEATHER FORECAST CARD -->
                             <div class="col mb-0 p-3">
                                 <div class="card forecast-day">
                                     <div class="card-body" id="card1">
-                                        <p class="one-date fw-bold">DD/MM/YYYY</p>
-                                        <p class="one-icon fw-bold fa-solid fa-cloud-sun-rain"></p>
+                                        <p class="one-date fw-bold" id="one-date">DD/MM/YYYY</p>
+                                        <p class="one-icon fw-bold fa-solid fa-cloud-sun-rain" id="one-icon"></p>
                                         <p class="one-temperature fw-bold" id="one-temperature">TEMPERATURE</p>
-                                        <p class="wind fw-bold" id="one-wind">WIND</p>
-                                        <p class="one-humidity fw-bold">HUMIDITY</p>
+                                        <p class="one-wind fw-bold" id="one-wind">WIND</p>
+                                        <p class="one-humidity fw-bold" id="one-humidity">HUMIDITY</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- DAY 2 WEATHER FORECAST -->
+                            <!-- DAY 2 WEATHER FORECAST CARD -->
                             <div class="col mb-0 p-3">
                                 <div class="card weatherforecast">
                                     <div class="card-body" id="card2">
-                                        <p class="five-date fw-bold">DD/MM/YYYY</p>
-                                        <p class="five-icon fw-bold fa-solid fa-cloud-rain"></p>
-                                        <p class="five-temperature fw-bold">TEMPERATURE</p>
-                                        <p class="five-wind fw-bold">WIND</p>
-                                        <p class="five-humidity fw-bold">HUMIDITY</p>
+                                        <p class="two-date fw-bold" id="two-date">DD/MM/YYYY</p>
+                                        <p class="two-icon fw-bold fa-solid fa-cloud-rain" id="two-icon"></p>
+                                        <p class="two-temperature fw-bold" id="two-temperature">TEMPERATURE</p>
+                                        <p class="two-wind fw-bold" id="two-wind">WIND</p>
+                                        <p class="two-humidity fw-bold" id="two-humidity">HUMIDITY</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- DAY 3 WEATHER FORECAST -->
+                            <!-- DAY 3 WEATHER FORECAST CARD -->
                             <div class="col mb-0 p-3">
                                 <div class="card weatherforecast">
                                     <div class="card-body" id="card3">
-                                        <p class="five-date fw-bold">DD/MM/YYYY</p>
-                                        <p class="five-icon fw-bold fa-solid fa-snowflake"></p>
-                                        <p class="five-temperature fw-bold">TEMPERATURE</p>
-                                        <p class="five-wind fw-bold">WIND</p>
-                                        <p class="five-humidity fw-bold">HUMIDITY</p>
+                                        <p class="three-date fw-bold" id="three-date">DD/MM/YYYY</p>
+                                        <p class="three-icon fw-bold fa-solid fa-snowflake" id="three-icon"></p>
+                                        <p class="three-temperature fw-bold" id="three-temperature">TEMPERATURE</p>
+                                        <p class="three-wind fw-bold" id="three-wind">WIND</p>
+                                        <p class="three-humidity fw-bold" id="three-humidity">HUMIDITY</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- DAY 4 WEATHER FORECAST -->
+                            <!-- DAY 4 WEATHER FORECAST CARD -->
                             <div class="col mb-0 p-3">
                                 <div class="card weatherforecast">
                                     <div class="card-body" id="card4">
-                                        <p class="five-date fw-bold">DD/MM/YYYY</p>
-                                        <p class="five-icon fw-bold fa-solid fa-sun"></p>
-                                        <p class="five-temperature fw-bold">TEMPERATURE</p>
-                                        <p class="five-wind fw-bold">WIND</p>
-                                        <p class="-humidity fw-bold">HUMIDITY</p>
+                                        <p class="four-date fw-bold" id="four-date">DD/MM/YYYY</p>
+                                        <p class="four-icon fw-bold fa-solid fa-sun" id="four-icon"></p>
+                                        <p class="four-temperature fw-bold" id="four-temperature">TEMPERATURE</p>
+                                        <p class="four-wind fw-bold" id="four-wind">WIND</p>
+                                        <p class="four-humidity fw-bold" id="four-humidity">HUMIDITY</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- DAY 5 WEATHER FORECAST-->
+                            <!-- DAY 5 WEATHER FORECAST CARD-->
                             <div class="col mb-0 p-3">
                                 <div class="card weatherforecast">
                                     <div class="card-body" id="card5">
-                                        <p class="five-date fw-bold">DD/MM/YYYY</p>
-                                        <p class="five-icon fw-bold fa-solid fa-cloud"></p>
-                                        <p class="five-temperature fw-bold">TEMPERATURE</p>
-                                        <p class="five-wind fw-bold">WIND</p>
-                                        <p class="five-humidity fw-bold">HUMIDITY</p>
+                                        <p class="five-date fw-bold" id="five-date">DD/MM/YYYY</p>
+                                        <p class="five-icon fw-bold fa-solid fa-cloud" id="five-icon"></p>
+                                        <p class="five-temperature fw-bold" id="five-temperature">TEMPERATURE</p>
+                                        <p class="five-wind fw-bold" id="five-wind">WIND</p>
+                                        <p class="five-humidity fw-bold" id="five-humidity">HUMIDITY</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- END OF 5 DAY WEATHER FORECAST -->
+                        <!-- END OF 5 DAY WEATHER FORECAST CARDS -->
                     </div>
                 </div>
             </div>
