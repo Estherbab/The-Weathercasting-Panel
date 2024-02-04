@@ -20,11 +20,17 @@ var form = document.getElementById("search-form");
 var currentWeather = document.getElementById("weather-today");
 var cityName = document.getElementById("city-name");
 var todaysDate = document.querySelector(".current-date");
-var weatherIcon = document.querySelector(".weather-icon");
 var temperature = document.querySelector(".temperature");
 var windSpeed = document.querySelector(".wind-speed");
 var humidity = document.querySelector(".humidity");
 var todayContainer = document.getElementById("today");
+
+const weatherIcon = document.querySelector(".weather-icon");
+var iconCode = data.weather[0].icon
+var weathericonURL = "https://openweathermap.org/img/wn/" + iconCode + "10d@2x.png"
+$("#wicon").attr('src',weathericonURL);
+
+
 
 // Declaring the variables for the 5 day weather forecast cards in the DOM elements
 var forecastcardBody = document.querySelectorAll(".card-body");
@@ -51,7 +57,7 @@ const getweatherDetails = (cityInput, lat, lon) => {
     .then((data) => {
       console.log(data);
       cityName.textContent = data.name;
-      weatherIcon.textContent = "https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
+      weatherIcon.textContent = data.weather[0].icon
       temperature.textContent = "Tempereature : " + data.main.temp + "°C";
       todaysDate.textContent = new Date(data.dt * 1000).toLocaleDateString(); // Javascript date format that goes into local storage & collects the date x 1000 so that its in the correct format
       humidity.textContent = "Humidity : " + data.main.humidity + "%";
@@ -162,7 +168,7 @@ if(i==20) {
   let windthreeDiv = document.getElementById("three-wind")                                                              // Setting the variable to access card 3's wind speed ID in html
   let humidthreeDiv = document.getElementById("three-humidity")                                                        // Setting the variable to access card 3's humidity ID in html
 
-  datethreeDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);      
+  datethreeDiv.textContent = dayjs().add(3, "day").set('hour', 12).set('minute', 0).set('second', 0);         
   threeweatherIconDiv.textContent = forecastData.list[i].weather[0].icon
   tempthreeDiv.textContent = "Temp: " + forecastData.list[i].main.temp +  "°C";
   windthreeDiv.textContent = "Wind: " + forecastData.list[i].wind.speed + "m/s";
@@ -178,7 +184,7 @@ if(i==28) {
   let windfourDiv = document.getElementById("four-wind")                                                              // Setting the variable to access card 4's wind speed ID in html
   let humidfourDiv = document.getElementById("four-humidity")                                                        // Setting the variable to access card 4's humidity ID in html
 
-  datefourDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);      
+  datefourDiv.textContent = dayjs().add(4, "day").set('hour', 12).set('minute', 0).set('second', 0);    
   fourweatherIconDiv.textContent = forecastData.list[i].weather[0].icon
   tempfourDiv.textContent = "Temp: " + forecastData.list[i].main.temp +  "°C";
   windfourDiv.textContent = "Wind: " + forecastData.list[i].wind.speed + "m/s";
@@ -194,7 +200,7 @@ if(i==36) {
   let windfiveDiv = document.getElementById("five-wind")                                                              // Setting the variable to access card 5's wind speed ID in html
   let humidfiveDiv = document.getElementById("five-humidity")                                                        // Setting the variable to access card 5's humidity ID in html
 
-  datefiveDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);      
+  datefiveDiv.textContent = dayjs().add(5, "day").set('hour', 12).set('minute', 0).set('second', 0);       
   fiveweatherIconDiv.textContent = forecastData.list[i].weather[0].icon
   tempfiveDiv.textContent = "Temp: " + forecastData.list[i].main.temp +  "°C";
   windfiveDiv.textContent = "Wind: " + forecastData.list[i].wind.speed + "m/s";
