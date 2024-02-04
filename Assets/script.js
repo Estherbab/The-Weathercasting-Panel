@@ -124,8 +124,8 @@ console.log(forecastData.list[i])
 if(i==4) {
   let tempDiv = document.getElementById("one-temperature")
   let windDiv = document.getElementById("one-wind")
-  tempDiv.textContent = forecastData.list[i].main.temp
-  windDiv.textContent = forecastData.list[i].wind.speed
+  tempDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";
+  windDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s"
 
 
 
