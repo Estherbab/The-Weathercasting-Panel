@@ -121,18 +121,29 @@ console.log(forecastData.list)
 for (let i = 4; i < 37; i+=8) {
 console.log(forecastData.list[i])
 
+// if index is = to the 4th number in the array append all the details below from the 4th array onto the first card
 if(i==4) {
-  let dateDiv = document.getElementById("one-date")                                                                 // Setting the variable to access card 1's date ID in html
-  let oneweatherIconDiv = document.getElementById("one-icon")                                                      // Setting the variable to access card 1's weather icon ID in html
-  let tempDiv = document.getElementById("one-temperature")                                                        // Setting the variable to access card 1's temperature ID in html
-  let windDiv = document.getElementById("one-wind")                                                              // Setting the variable to access card 1's wind speed ID in html
-  let humidDiv = document.getElementById("one-humidity")                                                        // Setting the variable to access card 1's humidity ID in html
+  let dateoneDiv = document.getElementById("one-date")                                                                 // Setting the variable to access card 1's date ID in html
+  let oneweatherIconDiv = document.getElementById("one-icon")                                                         // Setting the variable to access card 1's weather icon ID in html
+  let temponeDiv = document.getElementById("one-temperature")                                                        // Setting the variable to access card 1's temperature ID in html
+  let windoneDiv = document.getElementById("one-wind")                                                              // Setting the variable to access card 1's wind speed ID in html
+  let humidoneDiv = document.getElementById("one-humidity")                                                        // Setting the variable to access card 1's humidity ID in html
 
-  dateDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);                                           // The text content of the date section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
-  oneweatherIconDiv.textContent = forecastData.list[i].weather.icon                                           // The text content of the weather icon section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
-  tempDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";                            // The text content of the temperature section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
-  windDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";                           // The text content of the wind speed section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
-  humidDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";                          // The text content of the humidity section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  dateoneDiv.textContent = Date(forecastData.list[i].clouds.dt * 1000);                                           // The text content of the date section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  oneweatherIconDiv.textContent = forecastData.list[i].weather.icon                                              // The text content of the weather icon section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  temponeDiv.textContent = "Temperature: " + forecastData.list[i].main.temp +  "°C";                            // The text content of the temperature section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  windoneDiv.textContent = "Wind Speed: " + forecastData.list[i].wind.speed + "m/s";                           // The text content of the wind speed section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  humidoneDiv.textContent = "Humidity: " + forecastData.list[i].main.humidity + "%";                          // The text content of the humidity section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+  
+}
+
+if(i==12) {
+  let datetwoDiv = document.getElementById("two-date")                                                                 // Setting the variable to access card 2's date ID in html
+  let oneweatherIconDiv = document.getElementById("one-icon")                                                         // Setting the variable to access card 2's weather icon ID in html
+  let temponeDiv = document.getElementById("one-temperature")                                                        // Setting the variable to access card 2's temperature ID in html
+  let windoneDiv = document.getElementById("one-wind")                                                              // Setting the variable to access card 2's wind speed ID in html
+  let humidoneDiv = document.getElementById("one-humidity")                                                        // Setting the variable to access card 2's humidity ID in html
+
   
 
 
