@@ -26,9 +26,9 @@ var humidity = document.querySelector(".humidity");
 var todayContainer = document.getElementById("today");
 
 const weatherIcon = document.querySelector(".weather-icon");
-var iconCode = data.weather[0].icon
-var weathericonURL = "https://openweathermap.org/img/wn/" + iconCode + "10d@2x.png"
-$("#wicon").attr('src',weathericonURL);
+// var iconCode = data.weather[0].icon
+// var weathericonURL = "https://openweathermap.org/img/wn/" + iconCode + "10d@2x.png"
+// $("#wicon").attr('src',weathericonURL);
 
 
 
