@@ -100,6 +100,16 @@ This screenshot shows the search history of all the cities that have been previo
 
 
 
+---
+
+## Credits
+
+* Esther Babirye
+* W3schools
+* Bootstrap
+
+
+
 
 
 
