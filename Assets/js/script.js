@@ -23,9 +23,10 @@ var windSpeed = document.querySelector(".wind-speed");
 var humidity = document.querySelector(".humidity");
 var todayContainer = document.getElementById("today");
 
-const weatherIcon = document.querySelector(".weather-icon");
+const weatherIcon = document.querySelector("#current-icon");
 // var iconCode = data.weather[0].icon
-// var weathericonURL = "https://openweathermap.org/img/wn/" + iconCode + "10d@2x.png"
+
+
 // $("#wicon").attr('src',weathericonURL);
 
 // Declaring the variables for the 5 day weather forecast cards in the DOM elements
@@ -50,9 +51,10 @@ const getweatherDetails = (cityInput, lat, lon) => {
   fetch(weatherAPIURL)
     .then((res) => res.json())
     .then((data) => {
+      var currenticonURL = `https://openweathermap.org/img/w/${data.weather[0].icon}.png` 
       console.log(data);
       cityName.textContent = data.name;
-      weatherIcon.textContent = data.weather[0].icon;
+      weatherIcon.setAttribute("src",currenticonURL)
       temperature.textContent = "Tempereature : " + data.main.temp + "°C";
       todaysDate.textContent = new Date(data.dt * 1000).toLocaleDateString(); // Javascript date format that goes into local storage & collects the date x 1000 so that its in the correct format
       humidity.textContent = "Humidity : " + data.main.humidity + "%";
@@ -121,7 +123,8 @@ function displayForecast(forecastData) {
   console.log(forecastData.list);
   for (let i = 4; i < 37; i += 8) {
     console.log(forecastData.list[i]);
-
+    var weatherIconURL = `https://openweathermap.org/img/w/${forecastData.list[i].weather[0].icon}.png` 
+console.log(weatherIconURL)
     // if index is = to the 4th number in the array append all the details below from the 4th array onto the 1first card
     if (i == 4) {
       let dateoneDiv = document.getElementById("one-date"); // Setting the variable to access card 1's date ID in html
@@ -135,7 +138,7 @@ function displayForecast(forecastData) {
         .set("hour", 12)
         .set("minute", 0)
         .set("second", 0); // The text content of the date section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
-      oneweatherIconDiv.textContent = forecastData.list[i].weather[0].icon; // The text content of the weather icon section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
+      oneweatherIconDiv.setAttribute("src",weatherIconURL) // The text content of the weather icon section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
       temponeDiv.textContent = "Temp: " + forecastData.list[i].main.temp + "°C"; // The text content of the temperature section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
       windoneDiv.textContent =
         "Wind: " + forecastData.list[i].wind.speed + "m/s"; // The text content of the wind speed section in html is populated with the forecastData from openweather using dot notation to access the specific data in the console.log
@@ -156,7 +159,7 @@ function displayForecast(forecastData) {
         .set("hour", 12)
         .set("minute", 0)
         .set("second", 0);
-      twoweatherIconDiv.textContent = forecastData.list[i].weather[0].icon;
+        twoweatherIconDiv.setAttribute("src",weatherIconURL) 
       temptwoDiv.textContent = "Temp: " + forecastData.list[i].main.temp + "°C";
       windtwoDiv.textContent =
         "Wind:  " + forecastData.list[i].wind.speed + "m/s";
@@ -177,7 +180,7 @@ function displayForecast(forecastData) {
         .set("hour", 12)
         .set("minute", 0)
         .set("second", 0);
-      threeweatherIconDiv.textContent = forecastData.list[i].weather[0].icon;
+        threeweatherIconDiv.setAttribute("src",weatherIconURL) 
       tempthreeDiv.textContent =
         "Temp: " + forecastData.list[i].main.temp + "°C";
       windthreeDiv.textContent =
@@ -199,7 +202,7 @@ function displayForecast(forecastData) {
         .set("hour", 12)
         .set("minute", 0)
         .set("second", 0);
-      fourweatherIconDiv.textContent = forecastData.list[i].weather[0].icon;
+        fourweatherIconDiv.setAttribute("src",weatherIconURL);
       tempfourDiv.textContent =
         "Temp: " + forecastData.list[i].main.temp + "°C";
       windfourDiv.textContent =
@@ -221,7 +224,7 @@ function displayForecast(forecastData) {
         .set("hour", 12)
         .set("minute", 0)
         .set("second", 0);
-      fiveweatherIconDiv.textContent = forecastData.list[i].weather[0].icon;
+      fiveweatherIconDiv.setAttribute("src",weatherIconURL);
       tempfiveDiv.textContent =
         "Temp: " + forecastData.list[i].main.temp + "°C";
       windfiveDiv.textContent =
