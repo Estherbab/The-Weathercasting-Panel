@@ -9,34 +9,6 @@
       crossorigin="anonymous"/>
 
     <!-- START OF STYLING FOR ALL THE CSS CARDS-->
-    <style>
-      .card-body {
-        background-image: url(Assets/images/26180321822b51b.jpg);
-        object-fit: cover;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-      }
-
-      #card1 {
-        background-image: url(Assets/images/Sun_1-1.webp);
-      }
-
-      #card2 {
-        background-image: url(Assets/images/Sun_1-1.webp);
-      }
-
-      #card3 {
-        background-image: url(Assets/images/Sun_1-1.webp);
-      }
-
-      #card4 {
-        background-image: url(Assets/images/5297796-morning-cloudy-daylight-bright-horizon-sky-sunset-sunrise-orange-cloud-free-images.jpg);
-      }
-
-      #card5 {
-        background-image: url(Assets/images/5297796-morning-cloudy-daylight-bright-horizon-sky-sunset-sunrise-orange-cloud-free-images.jpg);
-      }
-    </style>
     <!-- END OF STYLING FOR ALL THE CSS CARDS-->
 
     <title>Weather Dashboard</title>
@@ -129,9 +101,9 @@
                   KAMPALA
                 </h2>
                 <p class="current-date fs-6 fw-bold">DD/MM/YYYY</p>
-                <p class="weather-icon fs-6 fw-bold fa-solid fa-cloud-sun">
-                  <img src="" alt="" />
-                </p>
+              
+                  <img id="current-icon" src="" alt="" />
+                
                 <p class="temperature fs-6 fw-bold">TEMPERATURE</p>
                 <p class="wind-speed fs-6 fw-bold">WIND SPEED</p>
                 <p class="humidity fs-6 fw-bold">HUMIDITY</p>
@@ -153,10 +125,10 @@
                   <div class="card forecast-day">
                     <div class="card-body" id="card1">
                       <p class="one-date fw-bold" id="one-date">DD/MM/YYYY</p>
-                      <p
-                        class="one-icon fw-bold fa-solid fa-cloud-sun-rain"
+                      <img
+                       src=""
                         id="one-icon"
-                      ></p>
+                      >
                       <p class="one-temperature fw-bold" id="one-temperature">
                         TEMPERATURE
                       </p>
@@ -173,10 +145,10 @@
                   <div class="card weatherforecast">
                     <div class="card-body" id="card2">
                       <p class="two-date fw-bold" id="two-date">DD/MM/YYYY</p>
-                      <p
-                        class="two-icon fw-bold fa-solid fa-cloud-rain"
-                        id="two-icon"
-                      ></p>
+                      <img
+                      src=""
+                       id="two-icon"
+                     >
                       <p class="two-temperature fw-bold" id="two-temperature">
                         TEMPERATURE
                       </p>
@@ -195,10 +167,10 @@
                       <p class="three-date fw-bold" id="three-date">
                         DD/MM/YYYY
                       </p>
-                      <p
-                        class="three-icon fw-bold fa-solid fa-snowflake"
-                        id="three-icon"
-                      ></p>
+                      <img
+                      src=""
+                       id="three-icon"
+                     >
                       <p
                         class="three-temperature fw-bold"
                         id="three-temperature"
@@ -218,10 +190,10 @@
                   <div class="card weatherforecast">
                     <div class="card-body" id="card4">
                       <p class="four-date fw-bold" id="four-date">DD/MM/YYYY</p>
-                      <p
-                        class="four-icon fw-bold fa-solid fa-sun"
-                        id="four-icon"
-                      ></p>
+                      <img
+                      src=""
+                       id="four-icon"
+                     >
                       <p class="four-temperature fw-bold" id="four-temperature">
                         TEMPERATURE
                       </p>
@@ -238,10 +210,10 @@
                   <div class="card weatherforecast">
                     <div class="card-body" id="card5">
                       <p class="five-date fw-bold" id="five-date">DD/MM/YYYY</p>
-                      <p
-                        class="five-icon fw-bold fa-solid fa-cloud"
+                      <img
+                       src=""
                         id="five-icon"
-                      ></p>
+                      >
                       <p class="five-temperature fw-bold" id="five-temperature">
                         TEMPERATURE
                       </p>

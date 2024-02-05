@@ -4,4 +4,29 @@ h1 {
 
 }
 
+.card-body {
+    background-image: url("../images/26180321822b51b.jpg");
+    object-fit: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
 
+  #card1 {
+    background-image: url("../images/Sun_1-1.webp");
+  }
+
+  #card2 {
+    background-image: url("../images/Sun_1-1.webp");
+  }
+
+  #card3 {
+    background-image: url("../images/Sun_1-1.webp");
+  }
+
+  #card4 {
+    background-image: url("../images/5297796-morning-cloudy-daylight-bright-horizon-sky-sunset-sunrise-orange-cloud-free-images.jpg");
+  }
+
+  #card5 {
+    background-image: url("../images/5297796-morning-cloudy-daylight-bright-horizon-sky-sunset-sunrise-orange-cloud-free-images.jpg");
+  }
