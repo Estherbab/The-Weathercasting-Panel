@@ -1,8 +1,8 @@
 # The-Weathercasting-Panel
 
 ## Description
-In this challenge i will be creating a weather dashboard that will feature and retrieve weather data for different cities. 
-I will be using the OpenWeatherMAP API to retrieve geographical coordinates for each city, this will help me to retrieve weather data for each of the cities
+In this challenge I will be creating a weather dashboard that will feature and retrieve weather data for different cities. 
+I will be using the OpenWeatherMAP API to retrieve geographical coordinates for each city, this will help me to retrieve weather data for each of the cities, displaying the name, date, weather icon, temperature, wind-speed, and humidity, for the current day as well as the forecast for the next 5 days for that particular city.
 
 
 
@@ -45,6 +45,7 @@ When a user searches for a city they are presented with current and future condi
 
 ---
 
+
 The city is added to the search history: As you can see in the picture below London has been added to the city search history in local storage.
 
 ![the following image shows the webpages functionality](Assets/images/Screenshot%202024-02-04%20at%2015.23.28.png)
@@ -65,20 +66,39 @@ When a user views the current weather conditions for that city they are presente
 
 ## 5dayForecast
 When a user view future weather conditions for that city they are presented with a 5-day forecast that displays:
-The date, An icon representation of weather conditions, The temperature and The humidity
+The date, An icon representation of weather conditions, The temperature and The humidity. As you can see the picture below shows NEW YORK cities 5-Day Weather Forecast weather data.
 
-![the following image shows the webpages functionality](Assets)
-
-
-
-## SearchHistory
-When a user click on a city in the search history they are again presented with current and future conditions for that city
-
-![the following image shows the webpages functionality]()
+![the following image shows the webpages functionality](Assets/images/Screenshot%202024-02-05%20at%2000.50.31.png)
 
 
 
-## Credits
+##  SearchHistory
+
+When a user click on a city in the search history they are again presented with current and future conditions for that city.
+Below is a screenshot showing all the cities the user has searched for with the cities being logged underneath the serach button.
+
+![the following image shows the webpages functionality](Assets/images/Screenshot%202024-02-05%20at%2000.56.27.png)
+
+
+---
+
+
+
+This screenshot shows when you clicked on a city that was previously searched (in this case London) it retrieves the data from the search history and shows the weather data for that city.
+
+![the following image shows the webpages functionality](Assets/images/Screenshot%202024-02-05%20at%2000.57.48.png)
+
+
+---
+
+
+
+This screenshot shows the search history of all the cities that have been previosuly searched stored in local storage.
+
+![the following image shows the webpages functionality](Assets/images/Screenshot%202024-02-05%20at%2000.58.36.png)
+
+
+
 
 
 
