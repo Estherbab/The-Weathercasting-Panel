@@ -25,9 +25,9 @@ var windSpeed = document.querySelector(".wind-speed");
 var humidity = document.querySelector(".humidity");
 var todayContainer = document.getElementById("today");
 
-const weatherIcon = document.querySelector(".weather-icon");
+const weatherIcon = document.getElementById("forecast-icon");
 // var iconCode = data.weather[0].icon
-// var weathericonURL = "https://openweathermap.org/img/wn/" + iconCode + "10d@2x.png"
+var weathericonURL = "https://openweathermap.org/img/wn/10d@2x.png"
 // $("#wicon").attr('src',weathericonURL);
 
 
@@ -57,7 +57,7 @@ const getweatherDetails = (cityInput, lat, lon) => {
     .then((data) => {
       console.log(data);
       cityName.textContent = data.name;
-      weatherIcon.textContent = data.weather[0].icon
+      weatherIcon.setAttribute("src,weathericonURL")
       temperature.textContent = "Tempereature : " + data.main.temp + "°C";
       todaysDate.textContent = new Date(data.dt * 1000).toLocaleDateString(); // Javascript date format that goes into local storage & collects the date x 1000 so that its in the correct format
       humidity.textContent = "Humidity : " + data.main.humidity + "%";
