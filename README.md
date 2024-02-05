@@ -7,7 +7,7 @@ I will be using the OpenWeatherMAP API to retrieve geographical coordinates for 
 
 
 
-Live link to deployed application [[]](https://estherbab.github.io/The-Weathercasting-Panel/)().
+Live link to deployed application [[click here ]](https://estherbab.github.io/The-Weathercasting-Panel/)().
 
 ---
 
